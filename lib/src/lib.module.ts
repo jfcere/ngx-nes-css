@@ -5,12 +5,12 @@ import { LibComponent } from './lib.component';
 
 @NgModule({
   declarations: [
-    LibComponent
+    LibComponent,
   ],
   imports: [
   ],
   exports: [
-    LibComponent
-  ]
+    LibComponent,
+  ],
 })
 export class LibModule { }

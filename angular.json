@@ -79,6 +79,16 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "eslintConfig": "demo/.eslintrc.json",
+            "lintFilePatterns": [
+              "demo/**/*.ts",
+              "demo/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -117,6 +127,16 @@
             "main": "lib/src/test.ts",
             "tsConfig": "lib/tsconfig.spec.json",
             "karmaConfig": "lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "eslintConfig": "lib/.eslintrc.json",
+            "lintFilePatterns": [
+              "lib/**/*.ts",
+              "lib/**/*.html"
+            ]
           }
         }
       }
