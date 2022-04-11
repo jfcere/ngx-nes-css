@@ -18,8 +18,7 @@
     "nes",
     "css",
     "components",
-    "retro",
-    "indy"
+    "retro"
   ],
   "peerDependencies": {
     "@angular/common": "^13.3.0",

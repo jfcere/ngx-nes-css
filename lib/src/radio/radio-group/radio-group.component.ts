@@ -52,7 +52,7 @@ export class NesRadioGroupComponent implements ControlValueAccessor, OnChanges {
   }
 
   private _handleDarkChange({ dark }: SimpleChanges): void {
-    if (dark.currentValue === dark.previousValue) {
+    if (dark == null || dark.currentValue === dark.previousValue) {
       return;
     }
     this._dark$.next(dark.currentValue);

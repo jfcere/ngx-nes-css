@@ -18,8 +18,7 @@
     "nes",
     "css",
     "components",
-    "retro",
-    "indy"
+    "retro"
   ],
   "scripts": {
     "ng": "ng",
