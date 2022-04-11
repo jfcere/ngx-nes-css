@@ -96,7 +96,7 @@
       "projectType": "library",
       "root": "lib",
       "sourceRoot": "lib/src",
-      "prefix": "lib",
+      "prefix": "nes",
       "schematics": {
         "@schematics/angular:application": {
           "strict": true

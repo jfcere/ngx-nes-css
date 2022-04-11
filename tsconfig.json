@@ -23,7 +23,7 @@
       "dom"
     ],
     "paths": {
-      "ngx-nes-scss": ["lib/src"]
+      "ngx-nes-css": ["lib/src"]
     }
   },
   "angularCompilerOptions": {

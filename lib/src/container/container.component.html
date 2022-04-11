@@ -1,0 +1,10 @@
+<div
+  class="nes-container with-title"
+  [class.with-title]="title"
+  [class.is-centered]="centered"
+  [class.is-dark]="dark"
+  [class.is-rounded]="rounded"
+>
+  <span class="title" *ngIf="title">{{ title }}</span>
+  <ng-content></ng-content>
+</div>

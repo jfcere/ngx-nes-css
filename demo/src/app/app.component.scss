@@ -1,0 +1,21 @@
+.demo-title {
+  i {
+    margin-right: 15px;
+  }
+}
+
+.dark {
+  background: rgb(33, 37, 41);
+}
+
+.radio {
+  padding: 15px;
+
+  &.dark + p {
+    margin-top: 15px;
+  }
+}
+
+section {
+  margin: 40px 0;
+}

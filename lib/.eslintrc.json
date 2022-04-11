@@ -31,6 +31,7 @@
             "style": "camelCase"
           }
         ],
+        "@angular-eslint/no-host-metadata-property": "off",
         "@angular-eslint/no-output-native": "off",
         "@typescript-eslint/ban-types": "off",
         "@typescript-eslint/dot-notation": "off",

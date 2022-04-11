@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LibComponent } from './lib.component';
+import { NesRadioOptionComponent } from './radio-option.component';
 
-describe('LibComponent', () => {
-  let component: LibComponent;
-  let fixture: ComponentFixture<LibComponent>;
+describe('RadioOptionComponent', () => {
+  let component: NesRadioOptionComponent;
+  let fixture: ComponentFixture<NesRadioOptionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LibComponent ],
+      declarations: [ NesRadioOptionComponent ],
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LibComponent);
+    fixture = TestBed.createComponent(NesRadioOptionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

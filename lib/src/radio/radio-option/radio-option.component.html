@@ -1,0 +1,13 @@
+<label>
+  <input
+    class="nes-radio"
+    type="radio"
+    [attr.checked]="checked$ | async"
+    [class.is-dark]="dark$ | async"
+    [name]="name"
+    (change)="onChange($event)"
+  >
+  <span>
+    <ng-content></ng-content>
+  </span>
+</label>

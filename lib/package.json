@@ -1,11 +1,32 @@
 {
   "name": "ngx-nes-css",
   "version": "0.0.1",
+  "description": "Angular library that wraps NES CSS to ease its use within the framework",
+  "homepage": "https://github.com/jfcere/ngx-nes-css",
+  "license": "MIT",
+  "author": {
+    "name": "Jean-Francois Cere",
+    "email": "jfcere@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfcere/ngx-nes-css"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "nes",
+    "css",
+    "components",
+    "retro",
+    "indy"
+  ],
   "peerDependencies": {
     "@angular/common": "^13.3.0",
     "@angular/core": "^13.3.0"
   },
   "dependencies": {
+    "nes.css": "^2.3.0",
     "tslib": "^2.3.0"
   }
 }
