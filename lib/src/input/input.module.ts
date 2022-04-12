@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { NesRadioGroupComponent } from './radio-group';
-import { NesRadioOptionComponent } from './radio-option';
+import { NesInputComponent } from './input';
+import { NesInputFieldComponent } from './input-field';
 
 const SHARED_DECLARATIONS = [
-  NesRadioGroupComponent,
-  NesRadioOptionComponent,
+  NesInputComponent,
+  NesInputFieldComponent,
 ];
 
 @NgModule({
@@ -19,4 +19,4 @@ const SHARED_DECLARATIONS = [
     ...SHARED_DECLARATIONS,
   ],
 })
-export class NesRadioModule { }
+export class NesInputModule { }

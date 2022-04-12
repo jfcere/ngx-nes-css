@@ -1,0 +1,7 @@
+<div
+  class="nes-field"
+  [class.is-inline]="inline"
+>
+  <label *ngIf="label" [class.is-dark]="dark" [for]="id">{{ label }}</label>
+  <ng-content></ng-content>
+</div>

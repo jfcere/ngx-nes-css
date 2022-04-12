@@ -11,10 +11,14 @@ export class AppComponent implements OnInit, OnDestroy {
   private readonly _destroyed$ = new Subject<void>();
 
   progress$ = new BehaviorSubject<number>(0);
+
   radioAnswerLight = 'Yes';
   radioAnswerDark = 'No';
+
   checkboxLight = true;
   checkboxDark = false;
+
+  inputValue = '';
 
   ngOnInit(): void {
     interval(1000)

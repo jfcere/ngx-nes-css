@@ -1,0 +1,9 @@
+@import "~nes.css/scss/base/color-palette";
+@import "~nes.css/scss/base/variables";
+
+label {
+  &.is-dark {
+    color: $background-color;
+    background-color: $base-color;
+  }
+}
