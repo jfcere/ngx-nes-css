@@ -6,6 +6,7 @@ import { NesInputModule } from './input';
 import { NesProgressModule } from './progress';
 import { NesRadioModule } from './radio';
 import { NesTextModule } from './text';
+import { NesTextareaModule } from './textarea';
 
 const SHARED_IMPORTS = [
   NesButtonModule,
@@ -15,6 +16,7 @@ const SHARED_IMPORTS = [
   NesProgressModule,
   NesRadioModule,
   NesTextModule,
+  NesTextareaModule,
 ];
 
 @NgModule({

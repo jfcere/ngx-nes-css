@@ -35,7 +35,7 @@
     "type-check:lib": "tsc --project ./lib/tsconfig.lib.json --noEmit",
     "test": "ng test",
     "gh-pages:build": "yarn build:demo --aot --base-href /ngx-nes-css/",
-    "gh-pages:deploy": "angular-cli-ghpages --dir=\"dist/demo\" --name=\"CircleCI\" --email=\"circleci@email.com\" --no-silent",
+    "gh-pages:deploy": "angular-cli-ghpages --dir=\"dist/demo\" --name=\"Jean-Francois Cere\" --email=\"jfcere@hotmail.com\" --no-silent",
     "publish:lib": "npm publish ./dist/lib"
   },
   "private": true,

@@ -30,10 +30,11 @@ export class NesCheckboxComponent implements ControlValueAccessor {
     this._onChange(value);
     this._onTouch(value);
 
-    // handle change event emitter and stop
-    // the `change` event propagation otherwise
-    // it will be triggered twice at it is bubbling up
+    // handle change event emitter
     this.change.emit(value);
+
+    // stop `change` event propagation otherwise
+    // it will be triggered twice at it is bubbling up
     event.stopPropagation();
   }
 

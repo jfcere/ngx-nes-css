@@ -20,6 +20,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   inputValue = '';
 
+  textareaValue = '';
+
   ngOnInit(): void {
     interval(1000)
       .pipe(takeUntil(this._destroyed$))
