@@ -1,0 +1,10 @@
+<label>
+  <input
+    class="nes-checkbox"
+    [class.is-dark]="dark"
+    [checked]="checked"
+    (change)="onChange($event)"
+    type="checkbox"
+  />
+  <span><ng-content></ng-content></span>
+</label>

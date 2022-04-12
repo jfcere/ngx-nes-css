@@ -16,7 +16,6 @@ import { ReplaySubject } from 'rxjs';
   ],
 })
 export class NesRadioGroupComponent implements ControlValueAccessor, OnChanges {
-
   @Input() dark = false;
   @Input() name!: string;
 

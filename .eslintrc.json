@@ -116,9 +116,7 @@
               {
                 "pattern": "@*/**",
                 "group": "parent"
-              }
-            ],
-            "pathGroups": [
+              },
               {
                 "pattern": "ngx-nes-css",
                 "group": "parent"

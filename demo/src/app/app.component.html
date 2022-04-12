@@ -65,13 +65,27 @@
   </nes-container>
 </section>
 
-<!--<section>
+<section>
   <nes-container title="Checkboxes">
-    Soon to come...
+    <div class="flex-column">
+
+      <div class="checkbox">
+        <nes-checkbox [checked]="checkboxLight" (change)="checkboxLight = $event">Enable</nes-checkbox>
+      </div>
+
+      <p>Checkbox is: {{ checkboxLight ? 'checked' : 'unchecked' }}</p>
+
+      <div class="checkbox dark">
+        <nes-checkbox [(ngModel)]="checkboxDark" [dark]="true">Dark</nes-checkbox>
+      </div>
+
+      <p>Checkbox is: {{ checkboxDark ? 'checked' : 'unchecked' }}</p>
+
+    </div>
   </nes-container>
 </section>
 
-<section>
+<!--<section>
   <nes-container title="Inputs">
     Soon to come...
   </nes-container>

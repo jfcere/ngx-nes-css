@@ -13,6 +13,8 @@ export class AppComponent implements OnInit, OnDestroy {
   progress$ = new BehaviorSubject<number>(0);
   radioAnswerLight = 'Yes';
   radioAnswerDark = 'No';
+  checkboxLight = true;
+  checkboxDark = false;
 
   ngOnInit(): void {
     interval(1000)
