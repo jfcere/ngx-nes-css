@@ -1,0 +1,7 @@
+@import "~nes.css/scss/base/color-palette";
+@import "~nes.css/scss/base/variables";
+
+@mixin placeholder() {
+  color: map-get($disabled-colors, shadow);
+  opacity: 1;
+}

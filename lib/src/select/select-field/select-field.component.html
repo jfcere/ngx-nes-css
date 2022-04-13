@@ -1,0 +1,19 @@
+<div
+  class="nes-field"
+  [class.is-inline]="inline"
+>
+  <label
+    *ngIf="label"
+    [for]="id"
+    [class.is-dark]="dark"
+  >
+    {{ label }}
+  </label>
+  <div
+    class="nes-select"
+    [class.is-dark]="dark"
+    [ngClass]="(color$ | async) ? 'is-' + color$.value : ''"
+  >
+    <ng-content></ng-content>
+  </div>
+</div>

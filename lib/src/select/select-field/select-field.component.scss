@@ -1,0 +1,26 @@
+@import "~nes.css/scss/base/color-palette";
+@import "~nes.css/scss/base/variables";
+
+label {
+  &.is-dark {
+    color: $background-color;
+    background-color: $base-color;
+  }
+}
+
+.nes-field {
+  &.is-inline {
+    label {
+      // workaround to align inline label and
+      // form control for input/textarea/select
+      position: relative;
+      left: -8px;
+      margin-right: calc(1.5rem - 8px);
+    }
+
+    .nes-select {
+      flex-basis: 0;
+      flex-grow: 5;
+    }
+  }
+}

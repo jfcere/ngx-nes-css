@@ -5,6 +5,7 @@ import { NesContainerModule } from './container';
 import { NesInputModule } from './input';
 import { NesProgressModule } from './progress';
 import { NesRadioModule } from './radio';
+import { NesSelectModule } from './select';
 import { NesTextModule } from './text';
 import { NesTextareaModule } from './textarea';
 
@@ -15,6 +16,7 @@ const SHARED_IMPORTS = [
   NesInputModule,
   NesProgressModule,
   NesRadioModule,
+  NesSelectModule,
   NesTextModule,
   NesTextareaModule,
 ];

@@ -13,7 +13,6 @@ export type NesTextareaColor = 'success' | 'warning' | 'error';
     '[class]': "color ? 'is-' + color : ''",
     '[class.is-dark]': 'dark',
     '[attr.id]': 'id',
-    'attr.type': 'text',
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

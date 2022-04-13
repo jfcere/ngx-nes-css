@@ -1,0 +1,11 @@
+@import "~nes.css/scss/base/color-palette";
+@import "~nes.css/scss/base/variables";
+
+:host {
+  margin: 0;
+
+  &:invalid {
+    color: map-get($disabled-colors, shadow);
+    opacity: 1;
+  }
+}
