@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NesAvatarModule } from './avatar';
 import { NesButtonModule } from './button';
 import { NesCheckboxModule } from './checkbox';
 import { NesContainerModule } from './container';
@@ -12,6 +13,7 @@ import { NesTextModule } from './text';
 import { NesTextareaModule } from './textarea';
 
 const SHARED_IMPORTS = [
+  NesAvatarModule,
   NesButtonModule,
   NesCheckboxModule,
   NesContainerModule,
@@ -26,7 +28,6 @@ const SHARED_IMPORTS = [
 ];
 
 @NgModule({
-  declarations: [],
   imports: [
     ...SHARED_IMPORTS,
   ],
