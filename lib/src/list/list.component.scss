@@ -1,0 +1,8 @@
+:host {
+  &.is-dark {
+    &,
+    ::ng-deep li::before {
+      color: white;
+    }
+  }
+}

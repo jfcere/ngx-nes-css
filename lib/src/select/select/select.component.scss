@@ -5,7 +5,7 @@
   margin: 0;
 
   &:invalid {
-    color: map-get($disabled-colors, shadow);
+    color: map-get($disabled-colors, shadow) !important;
     opacity: 1;
   }
 }

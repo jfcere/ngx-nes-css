@@ -3,6 +3,7 @@ import { NesButtonModule } from './button';
 import { NesCheckboxModule } from './checkbox';
 import { NesContainerModule } from './container';
 import { NesInputModule } from './input';
+import { NesListModule } from './list';
 import { NesProgressModule } from './progress';
 import { NesRadioModule } from './radio';
 import { NesSelectModule } from './select';
@@ -14,6 +15,7 @@ const SHARED_IMPORTS = [
   NesCheckboxModule,
   NesContainerModule,
   NesInputModule,
+  NesListModule,
   NesProgressModule,
   NesRadioModule,
   NesSelectModule,
