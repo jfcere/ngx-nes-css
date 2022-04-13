@@ -45,3 +45,11 @@ body {
 .flex-align-center {
   align-items: center;
 }
+
+/**
+ * Pixelated border fix
+ */
+
+* {
+  border-image-repeat: unset !important;
+}
