@@ -7,6 +7,7 @@ import { NesListModule } from './list';
 import { NesProgressModule } from './progress';
 import { NesRadioModule } from './radio';
 import { NesSelectModule } from './select';
+import { NesTableModule } from './table';
 import { NesTextModule } from './text';
 import { NesTextareaModule } from './textarea';
 
@@ -19,6 +20,7 @@ const SHARED_IMPORTS = [
   NesProgressModule,
   NesRadioModule,
   NesSelectModule,
+  NesTableModule,
   NesTextModule,
   NesTextareaModule,
 ];
