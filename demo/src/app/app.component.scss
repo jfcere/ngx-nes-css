@@ -8,6 +8,7 @@
   background: rgb(33, 37, 41);
 }
 
+.balloon,
 .checkbox,
 .input,
 .list,
@@ -20,6 +21,25 @@
 
   &.dark + p {
     margin-top: 15px;
+  }
+}
+
+.message {
+  &--left,
+  &--right {
+    align-items: flex-end;
+  }
+
+  &--left {
+    flex-wrap: wrap-reverse;
+  }
+
+  &--right {
+    place-content: flex-end;
+
+    .nes-balloon {
+      flex: 1;
+    }
   }
 }
 

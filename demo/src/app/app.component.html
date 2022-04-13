@@ -427,7 +427,42 @@
 
 <section>
   <nes-container title="Balloons">
-    Soon to come...
+
+    <div class="balloon flex-column flex-wrap">
+
+      <div class="message--left flex-row flex-wrap">
+        <i class="nes-bcrikko"></i>
+        <nes-balloon from="left">
+          Hello NES.css
+        </nes-balloon>
+      </div>
+
+      <div class="message--right flex-row flex-wrap">
+        <nes-balloon from="right">
+          Good morning. Thou hast had a good night's sleep, I hope.
+        </nes-balloon>
+        <i class="nes-bcrikko"></i>
+      </div>
+    </div>
+
+    <div class="balloon dark flex-column flex-wrap">
+
+      <div class="message--left flex-row flex-wrap">
+        <i class="nes-bcrikko"></i>
+        <nes-balloon from="left" [dark]="true">
+          Hello NES.css
+        </nes-balloon>
+      </div>
+
+      <div class="message--right flex-row flex-wrap">
+        <nes-balloon from="right" [dark]="true">
+          Good morning. Thou hast had a good night's sleep, I hope.
+        </nes-balloon>
+        <i class="nes-bcrikko"></i>
+      </div>
+
+    </div>
+
   </nes-container>
 </section>
 
