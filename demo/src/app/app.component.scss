@@ -39,8 +39,15 @@
 
     .nes-balloon {
       flex: 1;
-      max-width: 620px;
+      max-width: 660px;
     }
+  }
+}
+
+.radio {
+  nes-radio-group {
+    display: flex;
+    gap: 20px;
   }
 }
 
