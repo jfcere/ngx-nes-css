@@ -4,7 +4,7 @@
 
 <br>
 
-# NgxNesCss
+# ngx-nes-css
 
 This library is a wrap around [NES.css](https://nostalgic-css.github.io/NES.css/), a NES-style (8bit-like) CSS Framework.
 

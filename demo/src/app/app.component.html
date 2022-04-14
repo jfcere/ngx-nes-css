@@ -10,12 +10,14 @@
 <section>
   <nes-container title="Texts">
     <div class="flex-row flex-wrap">
+
       <span>Default</span>
       <span nes-text color="primary">Primary</span>
       <span nes-text color="success">Success</span>
       <span nes-text color="warning">Warning</span>
       <span nes-text color="error">Error</span>
       <span nes-text [disabled]="true">Disabled</span>
+
     </div>
   </nes-container>
 </section>
@@ -23,6 +25,7 @@
 <section>
   <nes-container title="Buttons">
     <div class="flex-row flex-wrap">
+
       <a nes-button href="#">Normal</a>
 
       <button nes-button color="primary">Primary</button>
@@ -35,6 +38,7 @@
         <span>Select your file</span>
         <input type="file">
       </label>
+
     </div>
   </nes-container>
 </section>
@@ -198,13 +202,13 @@
       </div>
 
     </div>
-
   </nes-container>
 </section>
 
 <section>
   <nes-container title="Containers">
     <div class="flex-column flex-wrap">
+
       <nes-container>
         <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
       </nes-container>
@@ -224,11 +228,14 @@
       <nes-container title="Dark Rounded" [dark]="true" [rounded]="true">
         <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
       </nes-container>
+
     </div>
   </nes-container>
 </section>
 
-<!--<nes-container title="Dialogs">
+<nes-container title="Dialogs">
+  Soon to come...
+  <!--
   Dialog
   <section>
     <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-default').showModal();">
@@ -295,27 +302,25 @@
         </menu>
       </form>
     </dialog>
-  </section>
-</nes-container>-->
+  </section>-->
+</nes-container>
 
 <section>
   <nes-container title="Lists">
 
-    <div class="list">
-      <ul nes-list list-type="disc">
-        <li>Good morning.</li>
-        <li>Thou hast had a good night's sleep, I hope.</li>
-        <li>Thou hast had a good afternoon</li>
-        <li>Good night.</li>
-      </ul>
+    <ul nes-list list-type="disc">
+      <li>Good morning.</li>
+      <li>Thou hast had a good night's sleep, I hope.</li>
+      <li>Thou hast had a good afternoon</li>
+      <li>Good night.</li>
+    </ul>
 
-      <ul nes-list list-type="circle">
-        <li>Good morning.</li>
-        <li>Thou hast had a good night's sleep, I hope.</li>
-        <li>Thou hast had a good afternoon</li>
-        <li>Good night.</li>
-      </ul>
-    </div>
+    <ul nes-list list-type="circle">
+      <li>Good morning.</li>
+      <li>Thou hast had a good night's sleep, I hope.</li>
+      <li>Thou hast had a good afternoon</li>
+      <li>Good night.</li>
+    </ul>
 
     <div class="list dark">
       <ul nes-list list-type="disc" [dark]="true">
@@ -443,6 +448,7 @@
         </nes-balloon>
         <i class="nes-bcrikko"></i>
       </div>
+
     </div>
 
     <div class="balloon dark flex-column flex-wrap">
@@ -462,15 +468,16 @@
       </div>
 
     </div>
-
   </nes-container>
 </section>
 
 <section>
   <nes-container title="Cursor">
+
     <nes-balloon from="left" nes-pointer>
       This is not a clickable element, but it's an area of the pointer.
     </nes-balloon>
+
   </nes-container>
 </section>
 
@@ -517,6 +524,7 @@
         <span nes-badge-color="dark">hi</span>
         <span nes-badge-color="warning">Text</span>
       </a>
+
     </div>
   </nes-container>
 </section>
