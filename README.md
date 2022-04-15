@@ -12,7 +12,12 @@ This library is a wrap around [NES.css](https://nostalgic-css.github.io/NES.css/
 
 ### ngx-nes-css
 
-`ngx-nes-css` depends on both [NES.css](https://nostalgic-css.github.io/NES.css/) for 8-bits styling and [@angular/cdk](https://material.angular.io/cdk) for dialog display. To install those librairies to your `package.json` use the following command.
+To add `ngx-nes-css` package and required dependencies you will need to install:
+- [ngx-nes-css](https://github.com/jfcere/ngx-nes-css) – Angular wrapper
+- [NES.css](https://nostalgic-css.github.io/NES.css/) – 8-bit CSS framework
+- [@angular/cdk](https://material.angular.io/cdk) – For dialog display
+
+To install those librairies to your `package.json` use the following command.
 
 ```bash
 npm install ngx-nes-css nes.css @angular/cdk --save
@@ -21,9 +26,9 @@ npm install ngx-nes-css nes.css @angular/cdk --save
 ### Styles
 
 To add `ngx-nes-css` required styles file you will need to include:
-- [NES.css](https://nostalgic-css.github.io/NES.css/) styles file for 8-bits styling
-- [ngx-nes-css](#) styles file that includes a few modifications/fixes/improvements
-- [@angular/cdk/overlay](https://material.angular.io/cdk/overlay) prebuilt styles file required for dialog display
+- [NES.css](https://nostalgic-css.github.io/NES.css/) styles file – 8-bit like styling
+- [ngx-nes-css](https://github.com/jfcere/ngx-nes-css) styles file – Includes a few modifications/fixes/improvements
+- [@angular/cdk/overlay](https://material.angular.io/cdk/overlay) styles file – Required for dialog display
 
 To do so, follow either one of the methods provided below.
 
