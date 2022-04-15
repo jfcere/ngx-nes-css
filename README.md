@@ -51,11 +51,9 @@ Or you can add the following styles files to the `styles` section of your `angul
 
 ### Fonts
 
-[NES.css](https://nostalgic-css.github.io/NES.css/) doesn't provide any fonts but recommends using [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P).
+[NES.css](https://nostalgic-css.github.io/NES.css/) doesn't provide any fonts but recommends using [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P). To include the recommended font [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) use either one of the methods below.
 
 > ☝ [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) only supports English characters. If you need any language other than English, please use another font or refer to the list of other recommended fonts here: https://github.com/nostalgic-css/NES.css#fonts
-
-To include the recommended font [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) use either one of the methods below:
 
 **CSS/SCSS**
 
@@ -111,7 +109,7 @@ export class AppModule { }
 
 **Components**
 
-As for now documentation about component usage consist of consulting the `demo` folder of this repository, more precisely the [app.component.html](https://github.com/jfcere/ngx-nes-css/blob/master/demo/src/app/app.component.html) file which contains each and every component with a few different way to use them.
+As for now, the documentation for components usage consist of consulting the `demo` folder of this repository, more precisely the [app.component.html](https://github.com/jfcere/ngx-nes-css/blob/master/demo/src/app/app.component.html) file which contains each and every component with a few different way to use them.
 
 Code snippets will be added and demo will be improved in a near futur.
 
