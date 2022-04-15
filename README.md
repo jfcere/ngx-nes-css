@@ -12,7 +12,7 @@ This library is a wrap around [NES.css](https://nostalgic-css.github.io/NES.css/
 
 ### ngx-nes-css
 
-To add ngx-nes-css library to your package.json use the following command.
+To add `ngx-nes-css` library to your `package.json` use the following command.
 
 ```bash
 npm install ngx-nes-css --save
@@ -20,77 +20,89 @@ npm install ngx-nes-css --save
 
 ### Styles
 
-Use one of the following methods to include the NES.css styling css file.
+To include [NES.css](https://nostalgic-css.github.io/NES.css/) styles embedded along with a few modifications/fixes/improvements into `ngx-nes-css` you need to include `ngx-nes-css/css/styles.css` file following one of the methods below.
 
-**AltCSS (sass, scss...)**
+**CSS/SCSS import**
 
 ```scss
-// style.scss
-@import "./node_modules/nes.css/css/nes.css";
+// in your `styles.css/scss` file
+@import '~ngx-nes-css/css/styles.css';
 ```
 
-**TypeScript**
+**Angular CLI**
 
-```typescript
-import 'nes.css/css/nes.min.css';
-```
-
-**HTML**
-
-```html
-<!-- index.html -->
-<html>
-  <head>
-    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
-  </head>
-  <body></body>
-</html>
-```
-
-**Via CDN**
-
-Import the CSS via a <link /> element:
-
-```html
-<!-- minify -->
-<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
-<!-- latest -->
-<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-<!-- core style only -->
-<link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+```json
+// in your `angular.json` file
+"styles": [
+  "node_modules/ngx-nes-css/css/styles.css"
+],
 ```
 
 ### Fonts
 
-NES.css doesn't provide any fonts, but we do maintain the following list of fonts that we recommend for usage alongside the library.
+[NES.css](https://nostalgic-css.github.io/NES.css/) doesn't provide any fonts but recommends using [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P).
 
-| Language  | Font                                                               |
-| --------- | ------------------------------------------------------------------ |
-| (Default) | [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) |
-| English   | [Kongtext](https://www.dafont.com/kongtext.font)                   |
-| Japanese  | [美咲フォント](http://littlelimit.net/misaki.htm)                  |
-| Japanese  | [Nu もち](http://kokagem.sakura.ne.jp/font/mochi/)                 |
-| Korean    | [둥근모꼴](http://cactus.tistory.com/193)                              |
-| Chinese   | [Zpix (最像素)](https://github.com/SolidZORO/zpix-pixel-font)      |
+> ☝ [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) only supports English characters. If you need any language other than English, please use another font or refer to the list of other recommended fonts here: https://github.com/nostalgic-css/NES.css#fonts
+
+To include the recommended font [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) use one of the methods below:
+
+**CSS/SCSS**
+
+Add the import link to your global `styles.css/scss` file along with the CSS rule to apply the font:
+
+```scss
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+  font-family: 'Press Start 2P', cursive;
+}
+```
+
+**HTML**
+
+Add the link for the font to your `index.html` file into the `<head>` tag:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+```
+
+Add the following CSS rule to your global `styles.css/scss` file to apply the font:
+
+```css
+html, body {
+  font-family: 'Press Start 2P', cursive;
+}
+```
 
 ## Usage
 
-NES.css only provides components. You will need to define your own layout.
+[NES.css](https://nostalgic-css.github.io/NES.css/) only provides components. You will need to define your own layout.
 
-The recommended font for NES.css is [Press Start 2P][press-start-2p-font]. However, [Press Start 2P][press-start-2p-font] only supports English characters. When you're using this framework with any language other than English, please use another font. Follow the Google Fonts [instructions][google-fonts-guide] about how to include them, or simply include it as below:
+**Module Import**
 
-```html
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+In order to have access to all the components, you will need to import the `NesModule` into your modules like this:
 
-    <style>
-      html, body, pre, code, kbd, samp {
-          font-family: "font-family you want to use";
-      }
-    </style>
-</head>
+```diff
+import { NgModule } from '@angular/core';
++ import { NesModule } from 'ngx-nes-css';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  imports: [
++   NesModule,
+  ],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+})
+export class AppModule { }
 ```
+
+**Components**
+
+As for now documentation about component usage consist of consulting the `demo` folder of this repository, more precisely the [app.component.html](https://github.com/jfcere/ngx-nes-css/blob/master/demo/src/app/app.component.html) file which contains each and every component with a few different way to use them.
+
+Code snippets will be added and demo will be improved in a near futur.
 
 ## Copyright and license
 
