@@ -1,9 +1,30 @@
-@import "~ngx-nes-css/css/styles.css";
+/**
+ * NES.css styles
+ */
+
+@import "nes.css/css/nes.css";
+
+/**
+ * ngx-nes-css styles
+ */
+
+@import "ngx-nes-css/css/styles.css";
+
+/**
+ * Cdk/Overlay prebuilt styles
+ */
+
+@import "@angular/cdk/overlay-prebuilt.css";
+
+/**
+ * Press Start 2P font
+ */
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /**
  * Native elements
- **/
+ */
 
 html,
 body {
@@ -25,7 +46,7 @@ body {
 
 /**
  * Flex utilities
- **/
+ */
 
 .flex-wrap {
   flex-wrap: wrap;

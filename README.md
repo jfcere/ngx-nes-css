@@ -12,29 +12,40 @@ This library is a wrap around [NES.css](https://nostalgic-css.github.io/NES.css/
 
 ### ngx-nes-css
 
-To add `ngx-nes-css` library to your `package.json` use the following command.
+`ngx-nes-css` depends on both [NES.css](https://nostalgic-css.github.io/NES.css/) for 8-bits styling and [@angular/cdk](https://material.angular.io/cdk) for dialog display. To install those librairies to your `package.json` use the following command.
 
 ```bash
-npm install ngx-nes-css --save
+npm install ngx-nes-css nes.css @angular/cdk --save
 ```
 
 ### Styles
 
-To include [NES.css](https://nostalgic-css.github.io/NES.css/) styles embedded along with a few modifications/fixes/improvements into `ngx-nes-css` you need to include `ngx-nes-css/css/styles.css` file following one of the methods below.
+To add `ngx-nes-css` required styles file you will need to include:
+- [NES.css](https://nostalgic-css.github.io/NES.css/) styles file for 8-bits styling
+- [ngx-nes-css](#) styles file that includes a few modifications/fixes/improvements
+- [@angular/cdk/overlay](https://material.angular.io/cdk/overlay) prebuilt styles file required for dialog display
+
+To do so, follow either one of the methods provided below.
 
 **CSS/SCSS import**
 
+You can add the following imports to your global `styles.css/scss` file:
+
 ```scss
-// in your `styles.css/scss` file
-@import '~ngx-nes-css/css/styles.css';
+@import 'nes.css/css/nes.css';
+@import 'ngx-nes-css/css/styles.css';
+@import "@angular/cdk/overlay-prebuilt.css";
 ```
 
 **Angular CLI**
 
+Or you can add the following styles files to the `styles` section of your `angular.json` file:
+
 ```json
-// in your `angular.json` file
 "styles": [
-  "node_modules/ngx-nes-css/css/styles.css"
+  "node_modules/nes.css/css/nes.css",
+  "node_modules/ngx-nes-css/css/styles.css",
+  "node_modules/@angular/cdk/overlay-prebuilt.css"
 ],
 ```
 
@@ -44,11 +55,11 @@ To include [NES.css](https://nostalgic-css.github.io/NES.css/) styles embedded a
 
 > ☝ [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) only supports English characters. If you need any language other than English, please use another font or refer to the list of other recommended fonts here: https://github.com/nostalgic-css/NES.css#fonts
 
-To include the recommended font [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) use one of the methods below:
+To include the recommended font [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) use either one of the methods below:
 
 **CSS/SCSS**
 
-Add the import link to your global `styles.css/scss` file along with the CSS rule to apply the font:
+You can add the import link to your global `styles.css/scss` file along with the CSS rule to apply the font:
 
 ```scss
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -60,13 +71,13 @@ html, body {
 
 **HTML**
 
-Add the link for the font to your `index.html` file into the `<head>` tag:
+Or you can add the link for the font to your `index.html` file into the `<head>` tag:
 
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 ```
 
-Add the following CSS rule to your global `styles.css/scss` file to apply the font:
+And add the following CSS rule to your global `styles.css/scss` file to apply the font:
 
 ```css
 html, body {
