@@ -1,0 +1,19 @@
+/**
+ * NES.css styles
+ */
+
+@import "~nes.css/css/nes.css";
+
+/**
+ * Cdk/Overlay prebuilt styles
+ */
+
+@import "@angular/cdk/overlay-prebuilt.css";
+
+/**
+ * Pixelated border fix
+ */
+
+* {
+  border-image-repeat: unset !important;
+}

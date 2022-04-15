@@ -1,0 +1,17 @@
+@import "~nes.css/scss/base/color-palette";
+@import "~nes.css/scss/base/variables";
+
+.nes-dialog {
+  position: relative;
+
+  &.is-dark {
+    border-style: solid;
+  }
+
+  &:not(.is-dark) {
+    background-color: $background-color;
+    color: $base-color;
+    border-style: solid;
+    border-color: $base-color;
+  }
+}

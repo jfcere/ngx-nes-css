@@ -1,4 +1,4 @@
-@import "~nes.css/css/nes.css";
+@import "~ngx-nes-css/css/styles.css";
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /**
@@ -46,10 +46,6 @@ body {
   align-items: center;
 }
 
-/**
- * Pixelated border fix
- */
-
-* {
-  border-image-repeat: unset !important;
+.flex-justify-center {
+  justify-content: center;
 }

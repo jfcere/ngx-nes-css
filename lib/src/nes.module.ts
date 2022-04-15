@@ -5,6 +5,7 @@ import { NesBalloonModule } from './balloon';
 import { NesButtonModule } from './button';
 import { NesCheckboxModule } from './checkbox';
 import { NesContainerModule } from './container';
+import { NesDialogModule } from './dialog';
 import { NesInputModule } from './input';
 import { NesListModule } from './list';
 import { NesPointerModule } from './pointer';
@@ -22,6 +23,7 @@ const SHARED_IMPORTS = [
   NesButtonModule,
   NesCheckboxModule,
   NesContainerModule,
+  NesDialogModule,
   NesInputModule,
   NesListModule,
   NesPointerModule,

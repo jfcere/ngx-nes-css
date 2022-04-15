@@ -4,14 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NesModule } from 'ngx-nes-css';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DialogModule } from './dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    DialogModule,
     FormsModule,
     NesModule,
   ],

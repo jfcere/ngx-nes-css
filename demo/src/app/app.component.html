@@ -233,77 +233,18 @@
   </nes-container>
 </section>
 
-<nes-container title="Dialogs">
-  Soon to come...
-  <!--
-  Dialog
-  <section>
-    <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-default').showModal();">
-      Open dialog
-    </button>
-    <dialog class="nes-dialog" id="dialog-default">
-      <form method="dialog">
-        <p class="title">Dialog</p>
-        <p>Alert: this is a dialog.</p>
-        <menu class="dialog-menu">
-          <button class="nes-btn">Cancel</button>
-          <button class="nes-btn is-primary">Confirm</button>
-        </menu>
-      </form>
-    </dialog>
-  </section>
+<section>
+  <nes-container title="Dialogs">
+    <div class="flex-row flex-wrap">
 
-  Dark dialog
-  <section>
-    <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-dark').showModal();">
-      Open dark dialog
-    </button>
-    <dialog class="nes-dialog is-dark" id="dialog-dark">
-      <form method="dialog">
-        <p class="title">Dark dialog</p>
-        <p>Alert: this is a dialog.</p>
-        <menu class="dialog-menu">
-          <button class="nes-btn">Cancel</button>
-          <button class="nes-btn is-primary">Confirm</button>
-        </menu>
-      </form>
-    </dialog>
-  </section>
+      <button nes-button color="primary" (click)="openDialogDefault()">Open dialog</button>
+      <button nes-button color="primary" (click)="openDialogDark()">Open dark dialog</button>
+      <button nes-button color="primary" (click)="openDialogRounded()">Open rounded dialog</button>
+      <button nes-button color="primary" (click)="openDialogDarkRounded()">Open dark rounded dialog</button>
 
-  Rounded dialog
-  <section>
-    <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-rounded').showModal();">
-      Open rounded dialog
-    </button>
-    <dialog class="nes-dialog is-rounded" id="dialog-rounded">
-      <form method="dialog">
-        <p class="title">Rounded dialog</p>
-        <p>Alert: this is a dialog.</p>
-        <menu class="dialog-menu">
-          <button class="nes-btn">Cancel</button>
-          <button class="nes-btn is-primary">Confirm</button>
-        </menu>
-      </form>
-    </dialog>
-  </section>
-
-  Dark and Rounded dialog
-  <section>
-    <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-dark-rounded').showModal();">
-      Open dark and rounded dialog
-    </button>
-    <dialog class="nes-dialog is-dark is-rounded" id="dialog-dark-rounded">
-      <form method="dialog">
-        <p class="title">Dark and Rounded dialog</p>
-        <p>Alert: this is a dialog.</p>
-        <menu class="dialog-menu">
-          <button class="nes-btn">Cancel</button>
-          <button class="nes-btn is-primary">Confirm</button>
-        </menu>
-      </form>
-    </dialog>
-  </section>-->
-</nes-container>
+    </div>
+  </nes-container>
+</section>
 
 <section>
   <nes-container title="Lists">
@@ -402,12 +343,14 @@
 <section>
   <nes-container title="Progress">
     <div class="flex-column flex-wrap">
+
       <nes-progress [value]="progress$ | async" [max]="100"></nes-progress>
       <nes-progress color="primary" [value]="80" [max]="100"></nes-progress>
       <nes-progress color="success" [value]="50" [max]="100"></nes-progress>
       <nes-progress color="warning" [value]="30" [max]="100"></nes-progress>
       <nes-progress color="error" [value]="10" [max]="100"></nes-progress>
       <nes-progress color="pattern" [value]="50" [max]="100"></nes-progress>
+
     </div>
   </nes-container>
 </section>
@@ -415,6 +358,7 @@
 <section>
   <nes-container title="Avatars">
     <div class="flex-row flex-align-center flex-wrap">
+
       <img nes-avatar [pixelated]="true" src="https://www.gravatar.com/avatar?s=15">
 
       <img nes-avatar size="small" [pixelated]="true" src="https://www.gravatar.com/avatar?s=15">
@@ -426,6 +370,7 @@
       <img nes-avatar size="small" [rounded]="true" [pixelated]="true" src="https://www.gravatar.com/avatar?s=15">
       <img nes-avatar size="medium" [rounded]="true" [pixelated]="true" src="https://www.gravatar.com/avatar?s=15">
       <img nes-avatar size="large" [rounded]="true" [pixelated]="true" src="https://www.gravatar.com/avatar?s=15">
+
     </div>
   </nes-container>
 </section>
