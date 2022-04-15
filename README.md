@@ -13,14 +13,14 @@ This library is a wrap around [NES.css](https://nostalgic-css.github.io/NES.css/
 ### ngx-nes-css
 
 To add `ngx-nes-css` package and required dependencies you will need to install:
-- [ngx-nes-css](https://github.com/jfcere/ngx-nes-css) – Angular wrapper
 - [NES.css](https://nostalgic-css.github.io/NES.css/) – 8-bit CSS framework
+- [ngx-nes-css](https://github.com/jfcere/ngx-nes-css) – Angular wrapper
 - [@angular/cdk](https://material.angular.io/cdk) – For dialog display
 
 To install those librairies to your `package.json` use the following command.
 
 ```bash
-npm install ngx-nes-css nes.css @angular/cdk --save
+npm install nes.css ngx-nes-css @angular/cdk --save
 ```
 
 ### Styles
