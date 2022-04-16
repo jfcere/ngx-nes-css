@@ -1,6 +1,6 @@
 {
   "name": "ngx-nes-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular library that wraps NES CSS to ease its use within the framework",
   "homepage": "https://github.com/jfcere/ngx-nes-css",
   "license": "MIT",
