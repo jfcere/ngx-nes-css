@@ -5,6 +5,7 @@ export * from './button';
 export * from './checkbox';
 export * from './container';
 export * from './dialog';
+export * from './icon';
 export * from './input';
 export * from './list';
 export * from './pointer';

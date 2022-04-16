@@ -28,7 +28,7 @@
           {
             "type": "attribute",
             "prefix": "nes",
-            "style": "camelCase"
+            "style": "kebab-case"
           }
         ],
         "@angular-eslint/no-host-metadata-property": "off",

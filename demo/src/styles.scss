@@ -44,6 +44,11 @@ body {
   box-sizing: border-box;
 }
 
+code {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+}
+
 /**
  * Flex utilities
  */
