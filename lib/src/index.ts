@@ -2,6 +2,7 @@ export * from './avatar';
 export * from './badge';
 export * from './balloon';
 export * from './button';
+export * from './character';
 export * from './checkbox';
 export * from './container';
 export * from './dialog';

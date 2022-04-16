@@ -3,6 +3,7 @@ import { NesAvatarModule } from './avatar';
 import { NesBadgeModule } from './badge';
 import { NesBalloonModule } from './balloon';
 import { NesButtonModule } from './button';
+import { NesCharacterModule } from './character';
 import { NesCheckboxModule } from './checkbox';
 import { NesContainerModule } from './container';
 import { NesDialogModule } from './dialog';
@@ -23,6 +24,7 @@ const SHARED_IMPORTS = [
   NesBadgeModule,
   NesBalloonModule,
   NesButtonModule,
+  NesCharacterModule,
   NesCheckboxModule,
   NesContainerModule,
   NesDialogModule,
