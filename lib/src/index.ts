@@ -8,6 +8,7 @@ export * from './dialog';
 export * from './icon';
 export * from './input';
 export * from './list';
+export * from './pixel-art';
 export * from './pointer';
 export * from './progress';
 export * from './radio';

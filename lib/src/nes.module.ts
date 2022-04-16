@@ -9,6 +9,7 @@ import { NesDialogModule } from './dialog';
 import { NesIconModule } from './icon';
 import { NesInputModule } from './input';
 import { NesListModule } from './list';
+import { NesPixelArtModule } from './pixel-art';
 import { NesPointerModule } from './pointer';
 import { NesProgressModule } from './progress';
 import { NesRadioModule } from './radio';
@@ -28,6 +29,7 @@ const SHARED_IMPORTS = [
   NesIconModule,
   NesInputModule,
   NesListModule,
+  NesPixelArtModule,
   NesPointerModule,
   NesProgressModule,
   NesRadioModule,
