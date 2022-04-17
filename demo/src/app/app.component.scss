@@ -53,4 +53,8 @@
 
 section {
   margin: 40px 0;
+
+  nes-container ::ng-deep > .nes-container {
+    padding-bottom: 50px;
+  }
 }

@@ -1,0 +1,21 @@
+<nes-textarea-field id="comment_field" label="Textarea">
+  <textarea nes-textarea [(ngModel)]="textareaValue"></textarea>
+</nes-textarea-field>
+
+<p>Textarea value: {{ textareaValue }}</p>
+
+<nes-textarea-field id="inline_field" label="Success" [inline]="true">
+  <textarea nes-textarea color="success" placeholder="NES.css"></textarea>
+</nes-textarea-field>
+
+<nes-textarea-field id="warning_field" label="Warning" [inline]="true">
+  <textarea nes-textarea color="warning" placeholder="8bit.css"></textarea>
+</nes-textarea-field>
+
+<nes-textarea-field id="error_field" label="Error" [inline]="true">
+  <textarea nes-textarea color="error" placeholder="awesome.css"></textarea>
+</nes-textarea-field>
+
+<nes-textarea-field id="dark_field" label="Dark" [inline]="true" [dark]="true">
+  <textarea nes-textarea placeholder="dark.css"></textarea>
+</nes-textarea-field>

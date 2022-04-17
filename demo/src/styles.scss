@@ -44,9 +44,28 @@ body {
   box-sizing: border-box;
 }
 
-code {
-  background-color: rgba(0, 0, 0, 0.1);
+code:not([class*=language-]) {
+  background: rgba(0, 0, 0, .1);
   padding: 5px 10px;
+}
+
+pre {
+  &::-webkit-scrollbar {
+    height: 15px;
+    width: 15px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.4);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.7);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.2);
+  }
 }
 
 /**

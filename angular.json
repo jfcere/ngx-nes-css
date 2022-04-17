@@ -10,6 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
+          "changeDetection": "OnPush",
           "skipTests": true,
           "style": "scss"
         },
@@ -41,9 +42,18 @@
               "demo/src/assets"
             ],
             "styles": [
-              "demo/src/styles.scss"
+              "demo/src/styles.scss",
+              "demo/src/scss/prism-theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/plugins/highlight-keywords/prism-highlight-keywords.min.js",
+              "node_modules/prismjs/components/prism-markup.min.js",
+              "node_modules/prismjs/components/prism-clike.min.js",
+              "node_modules/prismjs/components/prism-javascript.min.js",
+              "node_modules/prismjs/components/prism-typescript.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -112,6 +122,7 @@
           "strict": true
         },
         "@schematics/angular:component": {
+          "changeDetection": "OnPush",
           "style": "scss"
         }
       },

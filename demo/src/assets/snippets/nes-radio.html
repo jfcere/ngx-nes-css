@@ -1,0 +1,13 @@
+<nes-radio-group name="answerLight" [(ngModel)]="radioAnswerLight">
+  <nes-radio-option value="Yes">Yes</nes-radio-option>
+  <nes-radio-option value="No">No</nes-radio-option>
+</nes-radio-group>
+
+<p>Selected Answer: {{ radioAnswerLight }}</p>
+
+<nes-radio-group name="answerDark" [dark]="true" [(ngModel)]="radioAnswerDark">
+  <nes-radio-option value="Yes">Yes</nes-radio-option>
+  <nes-radio-option value="No">No</nes-radio-option>
+</nes-radio-group>
+
+<p>Selected Answer: {{ radioAnswerDark }}</p>
