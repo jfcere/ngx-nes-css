@@ -1,0 +1,7 @@
+<nes-checkbox [checked]="checkboxLight" (change)="checkboxLight = $event">Enable</nes-checkbox>
+
+<p>Checkbox is: {{ checkboxLight ? 'checked' : 'unchecked' }}</p>
+
+<nes-checkbox [(ngModel)]="checkboxDark" [dark]="true">Dark</nes-checkbox>
+
+<p>Checkbox is: {{ checkboxDark ? 'checked' : 'unchecked' }}</p>

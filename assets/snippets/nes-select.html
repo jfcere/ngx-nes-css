@@ -1,0 +1,41 @@
+<nes-select-field id="default_select" label="Default">
+  <select nes-select required [(ngModel)]="selectValue">
+    <option value="" disabled selected hidden>Select...</option>
+    <option>To be</option>
+    <option>Not to be</option>
+  </select>
+</nes-select-field>
+
+<p>Selected value: {{ selectValue }}</p>
+
+<nes-select-field id="success_select" label="Success" [inline]="true" >
+  <select nes-select color="success" required>
+    <option value="" disabled selected hidden>Select...</option>
+    <option value="To be">To be</option>
+    <option value="Not to be">Not to be</option>
+  </select>
+</nes-select-field>
+
+<nes-select-field id="warning_select" label="Warning" [inline]="true" >
+  <select nes-select color="warning" required>
+    <option value="" disabled selected hidden>Select...</option>
+    <option value="To be">To be</option>
+    <option value="Not to be">Not to be</option>
+  </select>
+</nes-select-field>
+
+<nes-select-field id="error_select" label="Error" [inline]="true" >
+  <select nes-select color="error" required>
+    <option value="" disabled selected hidden>Select...</option>
+    <option value="To be">To be</option>
+    <option value="Not to be">Not to be</option>
+  </select>
+</nes-select-field>
+
+<nes-select-field id="dark_select" label="Dark" [inline]="true" [dark]="true">
+  <select nes-select required>
+    <option value="" disabled selected hidden>Select...</option>
+    <option value="To be">To be</option>
+    <option value="Not to be">Not to be</option>
+  </select>
+</nes-select-field>

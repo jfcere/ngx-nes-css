@@ -1,0 +1,21 @@
+<nes-input-field id="name_field" label="Your name">
+  <input nes-input [(ngModel)]="inputValue" />
+</nes-input-field>
+
+<p>Input value: {{ inputValue }}</p>
+
+<nes-input-field id="inline_field" label="Success" [inline]="true">
+  <input nes-input color="success" placeholder="NES.css" />
+</nes-input-field>
+
+<nes-input-field id="warning_field" label="Warning" [inline]="true">
+  <input nes-input color="warning" placeholder="8bit.css" />
+</nes-input-field>
+
+<nes-input-field id="error_field" label="Error" [inline]="true">
+  <input nes-input color="error" placeholder="awesome.css" />
+</nes-input-field>
+
+<nes-input-field id="dark_field" label="Dark" [inline]="true" [dark]="true">
+  <input nes-input placeholder="dark.css" />
+</nes-input-field>
