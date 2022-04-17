@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CollapsableModule } from './collapsable';
 import { DialogModule } from './dialog';
+import { TabsModule } from './tabs';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { DialogModule } from './dialog';
     DialogModule,
     FormsModule,
     HttpClientModule,
-    NesModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
+    NesModule,
+    TabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

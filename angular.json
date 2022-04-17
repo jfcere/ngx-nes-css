@@ -37,6 +37,11 @@
             "polyfills": "demo/src/polyfills.ts",
             "tsConfig": "demo/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "demo/src/scss"
+              ]
+            },
             "assets": [
               "demo/src/favicon.ico",
               "demo/src/assets"

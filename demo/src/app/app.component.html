@@ -278,12 +278,12 @@
   </nes-container>
 
   <app-collapsable>
-    <p>Dialog consumer</p>
-    <markdown src="assets/snippets/nes-dialog.html"></markdown>
-    <markdown src="assets/snippets/nes-dialog.ts"></markdown>
-    <p>Dialog implementation</p>
-    <markdown src="assets/snippets/nes-dialog-default.html"></markdown>
-    <markdown src="assets/snippets/nes-dialog-default.ts"></markdown>
+    <app-tabs [files]="[
+      'assets/snippets/nes-dialog.html',
+      'assets/snippets/nes-dialog.ts',
+      'assets/snippets/nes-dialog-default.html',
+      'assets/snippets/nes-dialog-default.ts',
+    ]"></app-tabs>
   </app-collapsable>
 </section>
 
