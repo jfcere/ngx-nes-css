@@ -6,9 +6,8 @@ import { MarkdownModule } from 'ngx-markdown';
 import { NesModule } from 'ngx-nes-css';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CollapsableModule } from './collapsable';
 import { DialogModule } from './dialog';
-import { TabsModule } from './tabs';
+import { SnippetModule } from './snippet';
 
 @NgModule({
   declarations: [
@@ -17,13 +16,12 @@ import { TabsModule } from './tabs';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    CollapsableModule,
     DialogModule,
     FormsModule,
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
     NesModule,
-    TabsModule,
+    SnippetModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

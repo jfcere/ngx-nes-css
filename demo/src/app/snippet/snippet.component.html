@@ -1,0 +1,29 @@
+<button nes-button
+  class="snippet__collapse-button"
+  color="primary"
+  (click)="toggleOpened()"
+><></button>
+
+<div class="snippet" [@collapsableAnimation]="opened">
+  <swiper
+    class="snippet__tab-bar flex-row"
+    *ngIf="tabs.length > 1"
+    [slidesPerView]="'auto'"
+    [freeMode]="true"
+  >
+    <ng-template swiperSlide *ngFor="let tab of tabs; let i = index">
+      <button
+        class="snippet__tab-button"
+        [class.snippet__tab-button--active]="tab === selectedTab"
+
+        (click)="setActive(tab)"
+      >
+        {{ tab.label }}
+      </button>
+    </ng-template>
+  </swiper>
+
+  <div class="snippet__content">
+    <markdown [src]="selectedTab?.src"></markdown>
+  </div>
+</div>
