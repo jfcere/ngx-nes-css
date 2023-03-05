@@ -114,9 +114,7 @@ export class AppModule { }
 
 **Components**
 
-As for now, the documentation for components usage consist of consulting the `demo` folder of this repository, more precisely the [app.component.html](https://github.com/jfcere/ngx-nes-css/blob/master/demo/src/app/app.component.html) file which contains each and every component with a few different way to use them.
-
-Code snippets will be added and demo will be improved in a near futur.
+For documentation, you can refer to the demo page available @ [https://jfcere.github.io/ngx-nes-css/](https://jfcere.github.io/ngx-nes-css/) which includes collapsable code snippets. You can also directly consult the `demo` folder of this repository, more precisely the [app.component.html](https://github.com/jfcere/ngx-nes-css/blob/master/demo/src/app/app.component.html) file which contains each and every component with a few different way to use them.
 
 ## Copyright and license
 
